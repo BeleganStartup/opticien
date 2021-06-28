@@ -154,6 +154,7 @@ frontend/build
 # misc
 frontend/.DS_Store
 frontend/*.pem
+.DS_Store/
 
 # debug
 frontend/npm-debug.log*
@@ -168,3 +169,6 @@ frontend/.env.production.local
 
 # vercel
 .vercel
+
+# VS Confs
+.vscode/
