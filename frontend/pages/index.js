@@ -10,10 +10,11 @@ const index = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-
+      <div className="text-center">
+        <Button variant="primary" onClick={handleShow}>
+          Launch
+        </Button>
+      </div>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>

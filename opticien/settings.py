@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     # 3rd party apps
     'corsheaders',
     'rest_framework',
+    # My Apps
+    'parameter',
+    'membership',
+    'invoice',
 ]
 
 MIDDLEWARE = [
