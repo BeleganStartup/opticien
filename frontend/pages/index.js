@@ -1,12 +1,15 @@
-import React from 'react'
-
+// React Bootstrap
+import Container from 'react-bootstrap/Container'
+// Components
+import Stats from '../src/components/Stats'
 
 const index = () => {
-  let nombre_en_lettre = require('../public/num2let.js');
+
   return (
-    <div>
-      {console.log(nombre_en_lettre("15000.50", "Dinnar", "Centimes"))}
-    </div>
+    <Container>
+      <Stats />
+      <hr />
+    </Container>
   )
 }
 
