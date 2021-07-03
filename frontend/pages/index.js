@@ -2,6 +2,7 @@
 import Container from 'react-bootstrap/Container'
 // Components
 import Stats from '../src/components/Stats'
+import FastButtons from '../src/components/FastButtons'
 
 const index = () => {
 
@@ -9,6 +10,7 @@ const index = () => {
     <Container>
       <Stats />
       <hr />
+      <FastButtons />
     </Container>
   )
 }

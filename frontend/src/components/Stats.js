@@ -9,11 +9,14 @@ import { FaFileInvoiceDollar } from "react-icons/fa"
 import { GiStabbedNote } from "react-icons/gi"
 import { RiAccountCircleFill } from "react-icons/ri"
 import {ImAccessibility} from "react-icons/im"
+import {BiStats} from "react-icons/bi"
+
+
 
 const Stats = () => {
     return (
         <div>
-            <h1 className="m-2">Statistiques</h1>
+            <h1 className="my-3"><BiStats /> Statistiques</h1>
             <Row className="text-center" >
                 <Col md>
                     <StatCard
