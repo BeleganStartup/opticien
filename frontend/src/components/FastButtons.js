@@ -1,3 +1,5 @@
+// Next
+import Link from 'next/link'
 // React Bootstrap
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
@@ -16,17 +18,23 @@ const FastButtons = () => {
             <Row className="mb-5">
                 <Col md className="my-2">
                     <div className="d-grid gap-2">
-                    <Button variant="primary" size="lg"><VscAccount/> Clients</Button>
+                        <Link href="/clients" passHref>
+                            <Button variant="primary" size="lg"><VscAccount/> Clients</Button>
+                        </Link>
                     </div>
                 </Col>
                 <Col md className="my-2">
                     <div className="d-grid gap-2">
-                    <Button variant="primary" size="lg"><FaFileInvoiceDollar/> Factures</Button>
+                        <Link href="/factures" passHref>
+                            <Button variant="primary" size="lg"><FaFileInvoiceDollar/> Factures</Button>
+                        </Link>
                     </div>
                 </Col>
                 <Col md className="my-2">
                     <div className="d-grid gap-2">
-                    <Button variant="primary" size="lg"><GiStabbedNote/> Bons</Button>
+                        <Link href="/bons" passHref>
+                            <Button variant="primary" size="lg"><GiStabbedNote/> Bons</Button>
+                        </Link>
                     </div>
                 </Col>
             </Row>

@@ -1,5 +1,7 @@
 // React
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+// Next
+import Link from 'next/link'
 // React Bootstrap
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -50,10 +52,18 @@ const NavigationBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home"><VscHome/> Accueil</Nav.Link>
-                <Nav.Link href="#link"><VscAccount/> Client</Nav.Link>
-                <Nav.Link href="#link"><FaFileInvoiceDollar/> Facture</Nav.Link>
-                <Nav.Link href="#link"><GiStabbedNote/> Bon</Nav.Link>
+                <Link href="/" passHref>
+                    <Nav.Link><VscHome/> Accueil</Nav.Link>
+                </Link>
+                <Link href="/clients" passHref>
+                    <Nav.Link><VscAccount/> Client</Nav.Link>
+                </Link>
+                <Link href="/factures" passHref>
+                    <Nav.Link><FaFileInvoiceDollar/> Facture</Nav.Link>
+                </Link>
+                <Link href="/bons" passHref>
+                    <Nav.Link><GiStabbedNote/> Bon</Nav.Link>
+                </Link>
             </Nav>
             <Nav className="text-end">
                 <NavDropdown title={navDropdownTitle} id="basic-nav-dropdown">
