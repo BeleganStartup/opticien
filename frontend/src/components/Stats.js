@@ -20,7 +20,7 @@ const Stats = () => {
             <Row className="text-center" >
                 <Col md>
                     <StatCard
-                        header={<><ImStatsDots/> Clients</>}
+                        header={<><ImStatsDots/> Patients</>}
                         title={<>{<RiAccountCircleFill/>} 30</>}
                         content="Tous les temps"
                         bg="dark"

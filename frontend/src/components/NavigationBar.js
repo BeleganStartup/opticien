@@ -55,8 +55,8 @@ const NavigationBar = () => {
                 <Link href="/" passHref>
                     <Nav.Link><VscHome/> Accueil</Nav.Link>
                 </Link>
-                <Link href="/clients" passHref>
-                    <Nav.Link><VscAccount/> Client</Nav.Link>
+                <Link href="/patients" passHref>
+                    <Nav.Link><VscAccount/> Patient</Nav.Link>
                 </Link>
                 <Link href="/factures" passHref>
                     <Nav.Link><FaFileInvoiceDollar/> Facture</Nav.Link>

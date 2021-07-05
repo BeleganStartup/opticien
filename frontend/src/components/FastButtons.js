@@ -18,8 +18,8 @@ const FastButtons = () => {
             <Row className="mb-5">
                 <Col md className="my-2">
                     <div className="d-grid gap-2">
-                        <Link href="/clients" passHref>
-                            <Button variant="primary" size="lg"><VscAccount/> Clients</Button>
+                        <Link href="/patients" passHref>
+                            <Button variant="primary" size="lg"><VscAccount/> Patients</Button>
                         </Link>
                     </div>
                 </Col>

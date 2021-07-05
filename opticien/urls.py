@@ -27,5 +27,7 @@ urlpatterns = [
     # JWT Generator/Refresher
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/v1/invoice/', include('invoice.urls'))
+    path('api/v1/invoice/', include('invoice.urls')),
+    # My Apps
+    path('api/v1/patients/', include('membership.urls'))
 ]

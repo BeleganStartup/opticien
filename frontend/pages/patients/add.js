@@ -1,11 +1,11 @@
 import React from 'react'
 
-const index = () => {
+const add = () => {
     return (
         <div>
-            ccc
+            add
         </div>
     )
 }
 
-export default index
+export default add
